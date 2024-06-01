@@ -61,6 +61,10 @@ Custom component for displaying individual task items.
 
 2. Installations
 
+```bash
 cd rn-assignment3-ID-11137211
-npm install 3. Run
+npm install
+
+3. Run
 npm run android or npm run ios
+```
