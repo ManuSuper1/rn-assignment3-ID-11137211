@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
   taskItem: {
     backgroundColor: "#FFFFFF",
     padding: 10,
-    borderRadius: 5,
+    borderRadius: 10,
     marginVertical: 5,
     width: "100%",
     height: 128,

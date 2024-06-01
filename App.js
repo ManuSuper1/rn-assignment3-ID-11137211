@@ -7,7 +7,6 @@ import {
   TextInput,
   FlatList,
   Image,
-  Button,
   TouchableOpacity,
 } from "react-native";
 import Header from "./components/Header";
@@ -77,6 +76,7 @@ export default function App() {
           data={categories}
           renderItem={({ item }) => <CategoryCard category={item} />}
           keyExtractor={(item) => item.id}
+          showsHorizontalScrollIndicator={false}
         />
       </View>
       <View style={styles.tasksContainer}>
@@ -99,12 +99,10 @@ const styles = StyleSheet.create({
   icon: {
     width: 24,
     height: 24,
-    marginLeft: 8,
   },
   searchContainer: {
     flexDirection: "row",
     alignItems: "center",
-    justifyContent: "center",
     marginVertical: 10,
   },
   searchBar: {
@@ -120,12 +118,7 @@ const styles = StyleSheet.create({
     padding: 10,
     borderRadius: 5,
   },
-  buttonText: {
-    color: "#FFFFFF",
-    fontWeight: "bold",
-  },
   categoriesContainer: {
-    flexDirection: "column",
     marginBottom: 30,
     marginTop: 20,
   },

@@ -1,20 +1,18 @@
 import React from "react";
 import { View, Text, Image, StyleSheet } from "react-native";
 
-export default function Header() {
-  return (
-    <View style={styles.header}>
-      <View>
-        <Text style={styles.title}>Hello, Manu</Text>
-        <Text style={styles.subtitle}>9 tasks today</Text>
-      </View>
-      <Image
-        style={styles.profileImage}
-        source={require("../assets/profile.png")}
-      />
+const Header = () => (
+  <View style={styles.header}>
+    <View>
+      <Text style={styles.title}>Hello, Manu</Text>
+      <Text style={styles.subtitle}>9 tasks today</Text>
     </View>
-  );
-}
+    <Image
+      style={styles.profileImage}
+      source={require("../assets/profile.png")}
+    />
+  </View>
+);
 
 const styles = StyleSheet.create({
   header: {
@@ -34,9 +32,11 @@ const styles = StyleSheet.create({
   profileImage: {
     width: 46,
     height: 45,
-    borderRadius: 20,
+    borderRadius: 23,
     backgroundColor: "#fff",
+    borderWidth: 2,
     borderColor: "#fff",
-    borderWidth: 4,
   },
 });
+
+export default Header;
