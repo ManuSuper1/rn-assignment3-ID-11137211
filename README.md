@@ -54,15 +54,13 @@ Custom component for displaying individual task items.
 
 1. Clone the repository:
 
-   ````bash
-   git clone https://github.com/ManuSuper1/rn-assignment3-ID-11137211.git```
+   ```bash
+   git clone https://github.com/ManuSuper1/rn-assignment3-ID-11137211.git
 
-   ````
+   ```
 
 2. Installations
 
-````cd rn-assignment3-ID-11137211
-npm install```
-3. Run
-``` npm run android or npm run ios ```
-````
+cd rn-assignment3-ID-11137211
+npm install 3. Run
+npm run android or npm run ios
